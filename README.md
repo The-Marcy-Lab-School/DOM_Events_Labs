@@ -1,4 +1,4 @@
-# DOM Assessment
+# Unit 5 Problem Set: The Document Object Model
 
 ### Directions
 1. Fork and clone this lab
@@ -11,11 +11,9 @@
 
 **For Coding Exercises:**
 
-3. Navigate to the `exercises` directory to complete the coding exercises.
-4. Run `npm install` to load project dependencies.
-5. Complete coding exercises in the `exercises.js` file.
-6. Test your code often by running `npm test`.
-7. Check for style by running `./node_modules/.bin/eslint exercises.js` in the terminal.
+1. Navigate to the `exercises` directory to complete the coding exercises.
+2. There are two questions (part-1 and part-2)
+3. Skeleton HTML files and empty JavaScript files have been created for you. It is your job to write code that meets the problem requirements listed in the `exercises` README.
 
    **Note:** You are not done with your exercises until all tests pass and there are no eslint errors.
 
@@ -27,4 +25,4 @@
 * Lastly, I'm on Slack if you have any questions. 🤓
 
 ### Submission Deadline
-**You must open your Pull Request by 1PM today!**
+**You must open your pull request by 9AM on Tuesday, January 21!**

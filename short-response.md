@@ -21,7 +21,7 @@ What are three different `document` methods that you could use to select the `a`
   ```
 
 5. Assuming we have the following code in an HTML file. Describe what the JavaScript code is doing. What would happen when we submit the form?
-Answer: On line 1 we are creating a variable called `catForm` and we are storing the form into this variable. We are grabbing this element by its `Id` which is `new-cat`. We add an event to our form and the type of event is `submit` and this event only fire when a user click  `button` or `input type ='submit'` inside a `form`. We also pass a function to our eventListener and this function created an `input` variable which grabs the form element at index 1. 
+Answer: On line 1 we are creating a variable called `catForm` and we are storing the form into this variable. We are grabbing this element by its `Id` which is `new-cat`. We add an event to our form and the type of event is `submit` and this event only fire when a user click  `button` or `input type ='submit'` inside a `form`. We also pass a function to our eventListener and inside this function we create an `input` variable which grabs the form element at index 1. 
 
 
       ```html

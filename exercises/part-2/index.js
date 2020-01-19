@@ -27,7 +27,6 @@ tempForm.innerHTML = `
   <input type="submit" value="Set Name">`;
 
 
-
 const handler = new SwitchSwitch(contact, nameEl, tempForm);
 
 contact.addEventListener('dblclick', () => {

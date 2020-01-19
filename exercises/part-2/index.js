@@ -1,45 +1,42 @@
-class Replacer {
-  constructor(outerEl, innerEl) {
-    this.container = outerEl;
-    this.item = innerEl;
-    this.dataHold = '';
+class SwitchSwitch {
+  constructor(container, firstEl, tempEl) {
+    this.container = container;
+    this.firstEl = firstEl;
+    this.tempEl = tempEl;
+    this.data = '';
   }
 
-  makeForm() {
-    // clear container
-    this.container.innerHTML = `
-        <form action="#" id='nameForm'>
-            <label for='nameInput'>Name:</label>
-            <input type='text' name='newName' id='nameInput' required>
-            <input type="submit" value="Set Name">
-        </form>
-        `;
-
-    const nameForm = document.getElementById('nameForm');
-    nameForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      // get new input
-      const newName = document.getElementById('nameInput');
-      replacer.dataHold = newName.value;
-      this.showName();
-    });
+  showTempEl() {
+    this.container.innerHTML = '';
+    this.container.appendChild(this.tempEl);
   }
 
-  showName() {
-    this.container.innerHTML = `
-        <p id='name'>${this.dataHold}</p>
-        `;
-    const nameEl = document.getElementById('name');
-    nameEl.addEventListener('dblclick', () => {
-      replacer.makeForm();
-    });
+  showFirstEl() {
+    this.container.innerHTML = '';
+    this.container.appendChild(this.firstEl);
   }
 }
 
-const nameCont = document.getElementById('contact');
+const contact = document.getElementById('contact');
 const nameEl = document.getElementById('name');
-const replacer = new Replacer(nameCont, nameEl);
+const tempForm = document.createElement('form');
+tempForm.setAttribute('id', 'nameForm');
+tempForm.innerHTML = `
+  <label for='nameInput'>Name:</label>
+  <input type='text' name='newName' id='nameInput' required>
+  <input type="submit" value="Set Name">`;
 
-nameEl.addEventListener('dblclick', () => {
-  replacer.makeForm();
+
+
+const handler = new SwitchSwitch(contact, nameEl, tempForm);
+
+contact.addEventListener('dblclick', () => {
+  handler.showTempEl();
+});
+
+tempForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  nameEl.innerHTML = tempForm[0].value;
+  tempForm[0].value = '';
+  handler.showFirstEl();
 });

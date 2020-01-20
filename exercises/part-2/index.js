@@ -3,7 +3,6 @@ class SwitchSwitch {
     this.container = container;
     this.firstEl = firstEl;
     this.tempEl = tempEl;
-    this.data = '';
   }
 
   showTempEl() {

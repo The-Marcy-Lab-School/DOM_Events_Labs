@@ -1,0 +1,17 @@
+table {
+    font-family: sans-serif;
+    margin: 20px;
+    border: black 1px solid;
+}
+
+table th {
+    padding: 20px;
+}
+
+table tr {
+    text-align: left;
+}
+
+table td {
+    padding: 15px;
+}

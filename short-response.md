@@ -2,7 +2,8 @@
 ## Short Response Section 
 
 1. In your own words, answer the following questions: what is the Document Object Model? Why is it useful?
-
+  The Document Object Model is a representation of the objects that make up the structure and the content of a webpage. 
+  It is useful as the it can be used to read or modify the content of a webpage and any changes made will be reflected in the webpage. 
 
 2. Given some HTML that looks like this:
 
@@ -14,8 +15,16 @@
       ```
 
 What are three different `document` methods that you could use to select the `a` element and store it into a variable?
+      ```javascript
+      const about = document.querySelectorAll('a')
+      const about = document.getElementsByClassName('primary')
+      const about = document.getElementById('about')
 
-5. Assuming we have the following code in an HTML file. Describe what the JavaScript code is doing. What would happen when we submit the form?
+      ```
+
+3. Assuming we have the following code in an HTML file. Describe what the JavaScript code is doing. What would happen when we submit the form?
+        
+      The JavaScript code is acting on the submition from the form. It takes in the cat name that is inputed in the form and creates an <li> element then appends the cat name to the unordered list in HTML.
 
       ```html
       <form id="new-cat" action="/" method="POST">
@@ -44,8 +53,12 @@ What are three different `document` methods that you could use to select the `a`
         catList.append(catListItem);
       })
       ```
+      
+      
 
-6. The following HTML and JavaScript creates a button that logs a message to the console each time it is clicked. What line or lines of code could you remove from the JavaScript file and keep the same behavior? Assume that the JavaScript file is being loaded into the HTML via a script tag.
+4. The following HTML and JavaScript creates a button that logs a message to the console each time it is clicked. What line or lines of code could you remove from the JavaScript file and keep the same behavior? Assume that the JavaScript file is being loaded into the HTML via a script tag.
+
+      To keep the same behavior of logging to the console, lines containing   e.preventDefault(); and e.stopPropagation(); would be removed. This is as being able to click the button with its default feature still allows for the message to be logged. 
 
       ```html
       <button id="log">Click to Log to Console</button>
@@ -62,10 +75,10 @@ What are three different `document` methods that you could use to select the `a`
       })
       ```
 
-7. When developing web applications, what are some examples of events that a user might initiate? Describe at least five.
+5. When developing web applications, what are some examples of events that a user might initiate? Describe at least five.
+  A user might initiate a click event that allows for actions to occur once a specific button is clicked. Mousedown 
 
-
-8. Given the following HTML file, describe what would happen when a user clicks the "Alert" button? What change would you need to make to make our "handleClick" function fire?
+6. Given the following HTML file, describe what would happen when a user clicks the "Alert" button? What change would you need to make to make our "handleClick" function fire?
 
       ```html
       <!DOCTYPE html>

@@ -66,7 +66,7 @@ What are three different `document` methods that you could use to select the `a`
         console.log("Logging...")
       })
       ```
-- Simply removing the `e.stopPropagation()` command would still allow the button to be clicked, and the message would still be logged in the console.
+- Removing the `e.stopPropagation()` command and the `e.preventDefault()` command would still allow the button to be clicked, and the message would still be logged in the console. There isn't any nesting in the HTML, and because the button is not an input from a form, it won't refresh the page the way a submit input would.
 
 7. When developing web applications, what are some examples of events that a user might initiate? Describe at least five.
 

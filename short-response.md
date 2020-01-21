@@ -1,8 +1,9 @@
-# Unit 5 Assessment: The Document Object Model 
-## Short Response Section 
+# Unit 5 Assessment: The Document Object Model
+## Short Response Section
 
 1. In your own words, answer the following questions: what is the Document Object Model? Why is it useful?
 
+- The Document Object Model (DOM) is a representation of the HTML that you use when developing websites. The mental model for this is often a tree. It's useful if you want to add interactivity to your HTML using a common language JavaScript, such as animations or being able to click buttons and the like.
 
 2. Given some HTML that looks like this:
 
@@ -14,6 +15,8 @@
       ```
 
 What are three different `document` methods that you could use to select the `a` element and store it into a variable?
+
+- `document.getElementById('about')`, `document.getElementsByClassName('primary')`, and `document.getElementsByTagName('a')`
 
 5. Assuming we have the following code in an HTML file. Describe what the JavaScript code is doing. What would happen when we submit the form?
 
@@ -45,6 +48,8 @@ What are three different `document` methods that you could use to select the `a`
       })
       ```
 
+- The JS is going into the `new-cat` form and adding an event listener for when the user submits a form. When they do, the form's input element is stored in `input`, and the value of the input is stored in `name`, which is what the user inputs. Then, the unordered list is targeted in `catList`. A new `li` element is created an stored in `catListItem`, and the text inside that `li` is assigned to the user's input, `name`. The `li` is then plaes inside the unordered list, `catList`. The unordered list in the webpage should now show the user's input. However, it would be quickly replaced with an error since the submit button's default is not prevented.
+
 6. The following HTML and JavaScript creates a button that logs a message to the console each time it is clicked. What line or lines of code could you remove from the JavaScript file and keep the same behavior? Assume that the JavaScript file is being loaded into the HTML via a script tag.
 
       ```html
@@ -61,9 +66,11 @@ What are three different `document` methods that you could use to select the `a`
         console.log("Logging...")
       })
       ```
+- Removing the `e.stopPropagation()` command and the `e.preventDefault()` command would still allow the button to be clicked, and the message would still be logged in the console. There isn't any nesting in the HTML, and because the button is not an input from a form, it won't refresh the page the way a submit input would.
 
 7. When developing web applications, what are some examples of events that a user might initiate? Describe at least five.
 
+- A click, a submit, a double click, pressing the up key, pressing the down key, pressing space, pressing enter
 
 8. Given the following HTML file, describe what would happen when a user clicks the "Alert" button? What change would you need to make to make our "handleClick" function fire?
 
@@ -90,3 +97,5 @@ What are three different `document` methods that you could use to select the `a`
 
       button.addEventListener('click', handleClick)
       ```
+
+- Nothing would happen, because the value of `button` is null. To fix this, move the `script` tag to the bottom of the `body` tag.

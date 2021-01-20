@@ -23,6 +23,3 @@
 * Pay close attention to your spelling and grammar. For short responses, if you want to take advantage of spell check, etc., you can always type in a word document first and then copy your responses over.
 * I'm looking for clarity and conciseness. Answer the questions as directly as you possibly can, in as few words as you possibly can, while using as precise of language as you possibly can.
 * Lastly, I'm on Slack if you have any questions. 🤓
-
-### Submission Deadline
-**You must open your pull request by 9AM on Tuesday, January 21!**

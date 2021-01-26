@@ -15,7 +15,7 @@
 2. There are two questions (part-1 and part-2)
 3. Skeleton HTML files and empty JavaScript files have been created for you. It is your job to write code that meets the problem requirements listed in the `exercises` README.
 
-   **Note:** You are not done with your exercises until all tests pass and there are no eslint errors.
+   **Note:** You are not done with your exercises until there are no eslint errors.
 
 
 ### Tips

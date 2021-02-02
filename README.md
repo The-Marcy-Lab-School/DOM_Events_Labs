@@ -1,7 +1,6 @@
 # Unit 5 Problem Set: The Document Object Model
 
 ### Directions
-1. Fork and clone this lab
 
 **For Short Responses:**
 

@@ -38,3 +38,4 @@ Given the HTML file in `part-2`, write code in the `events.js` file so that the 
 
 1. Double clicking on the `name` heading should replace the heading with an editable input and a save button.
 2. Clicking on the save button should replace the input with a header with the current input value.
+3. You should be able to repeat this process of switching between header and editable input over and over again. 

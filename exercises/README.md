@@ -2,11 +2,11 @@
 
 ## Part 1 - rendering data
 
-In the `index.js` in the part-1 directory, fill in the body of a function called `renderDataTable`. This function should take in an array of objects and an element and render a table containing the headers and data. For example, calling the function as follows:
+In the `index.js` in the part-1 directory, fill in the body of a function called `renderDataTable`. This function should take in an array of objects and an element and render inside that element a table containing the headers and data. For example, calling the function as follows:
 
 ```JavaScript
 const animals = [{name: 'Martin', species: 'Elephant'}, {name: 'Grace', species: 'Tiger'}]
-const el = document.getElementById('animals')
+const el = document.querySelector('body')
 renderDataTable(animals, el)
 ```
 
@@ -21,7 +21,7 @@ Calling it with a different data structure should render a different table. For 
 
 ```JavaScript
 const cities = [{city_name: 'New York', state: 'NY', population: 8000000}, {city_name: 'San Fransisco', state: 'CA', population: 900000}]
-const el = document.getElementById('cities')
+const el = document.querySelector('body')
 renderDataTable(animals, el)
 ```
 

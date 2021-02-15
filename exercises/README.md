@@ -36,6 +36,6 @@ Should render:
 
 Given the HTML file in `part-2`, write code in the `events.js` file so that the following behavior works.
 
-1. Double clicking on the `name` header should replace the header with a form consisting of an editable text input and a submit button.
-2. Submitting the form should replace it with a header displaying the text value that was in the input field.
-3. You should be able to repeat this process of switching back and forth between header and form, which each submission of the form changing the text in the header.
+1. Double clicking on the `name` header should **replace** the header with a form consisting of an editable text input and a submit button.
+2. Submitting the form should **replace** it with a header displaying the text value that was in the input field.
+3. You should be able to repeat this process of switching back and forth between header and form, with each submission of the form changing the text in the header.

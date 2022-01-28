@@ -14,8 +14,3 @@
 2. There are two questions (part-1 and part-2)
 3. Skeleton HTML files and empty JavaScript files have been created for you. It is your job to write code that meets the problem requirements listed in the `exercises` README.
 
-
-### Tips
-* This is open book, open note, open documentation, open console. Use your resources. Just don't use your neighbor. 😉
-* Pay close attention to your spelling and grammar. For short responses, if you want to take advantage of spell check, etc., you can always type in a word document first and then copy your responses over.
-* We're looking for clarity and conciseness. Answer the questions as directly as you possibly can, in as few words as you possibly can, while using as precise of language as you possibly can.

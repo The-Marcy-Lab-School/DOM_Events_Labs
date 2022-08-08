@@ -1,4 +1,4 @@
-# Problem Set: The Document Object Model
+# Problem Set: DOM and JS Events
 
 ### Directions
 

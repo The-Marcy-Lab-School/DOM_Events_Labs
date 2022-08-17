@@ -22,7 +22,7 @@ Calling it with a different data structure should render a different table. For 
 ```JavaScript
 const cities = [{city_name: 'New York', state: 'NY', population: 8000000}, {city_name: 'San Fransisco', state: 'CA', population: 900000}]
 const el = document.querySelector('body')
-renderDataTable(animals, el)
+renderDataTable(cities, el)
 ```
 
 Should render:
